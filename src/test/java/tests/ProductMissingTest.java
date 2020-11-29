@@ -9,7 +9,7 @@ import pages.ProductsPage;
 public class ProductMissingTest extends BaseTest {
 
     @Test
-    public void checkViewedProductsTest() {
+    public void checkMissingProductsTest() {
         HomePage homePage = new HomePage(getDriver());
         ProductsPage productsPage = new ProductsPage(getDriver());
         LoginPage loginPage = new LoginPage(getDriver());

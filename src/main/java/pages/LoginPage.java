@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,19 +28,19 @@ public class LoginPage extends BasePage {
         wait = new Waiter(driver);
         PageFactory.initElements(driver, this);
     }
-
+    @Step
     public void enterToAccountClick() {
         wait.untilVisible(enterToAccountLink).click();
     }
-
+    @Step
     public void inputLoginField() {
         wait.untilVisible(loginField).sendKeys("Petrovartem01061996@gmail.com");
     }
-
+    @Step
     public void inputPasswordField() {
         passwordField.sendKeys("01061996Artem");
     }
-
+    @Step
     public void enterButtonClick() {
         wait.untilVisible(enterButton).click();
     }

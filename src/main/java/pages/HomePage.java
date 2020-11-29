@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,22 +32,23 @@ public class HomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @Step
     public void navigateToCategoriesFromMainPage() {
         wait.untilVisible(productsCatalogue).click();
     }
-
+    @Step
     public void navigateToLaptopCategory() {
         wait.untilVisible(laptopCategory).click();
     }
-
+    @Step
     public void ProductForGamersCategoryClick() {
         wait.untilVisible(productForGamersCategory).click();
     }
-
+    @Step
     public void playstationStoreCategoryClick() {
         wait.untilVisible(playstationStoreCategory).click();
     }
-
+    @Step
     public void wishListButtonClick() {
         wait.untilVisible(wishListButton).click();
     }

@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     protected static WebDriver driver;
 
+
     @BeforeClass
     public void setUp() {
         driver = new ChromeDriver();

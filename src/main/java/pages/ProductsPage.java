@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,23 +57,24 @@ public class ProductsPage extends BasePage {
         wait.untilVisible(firstProduct);
         return firstProduct.getText();
     }
-
+    @Step
     public void putFirstProductInCart() {
         wait.untilVisible(cartButtonOnFirstProduct).click();
 
     }
-
+    @Step
     public void clickToHeaderCartButton() {
         wait.untilVisible(headerCartButton).click();
     }
-
+    @Step
     public void playStationCategoryClick() {
         wait.untilVisible(playStationCategory).click();
     }
-
+    @Step
     public void playStationChoiceClick() {
         wait.untilVisible(playStationChoice).click();
     }
+    @Step
     public void notifyAboutAppearingOfProductButtonClick() {
         wait.untilVisible(notifyAboutAppearingOfProductButton1).click();
     }

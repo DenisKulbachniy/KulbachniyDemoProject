@@ -1,1 +1,4 @@
 /chromedriver.exe
+*.iml
+/.idea/
+/.allure/
